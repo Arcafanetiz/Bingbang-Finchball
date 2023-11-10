@@ -5,7 +5,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class BallScore : MonoBehaviour
 {
-    private void Update()
+    private void FixedUpdate()
     {
         if (transform.position.y < 0)
         {
