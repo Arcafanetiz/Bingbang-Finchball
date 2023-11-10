@@ -11,6 +11,6 @@ public class MovingWall : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position = new Vector3(Mathf.Lerp(-1, 1, Mathf.PingPong(Time.time * moveSpeed, 1)) * xLimit, 0, transform.position.z);
+        transform.position = new Vector3(Mathf.Lerp(-1, 1, Mathf.PingPong(Time.time * moveSpeed, 1)) * xLimit, transform.position.y, transform.position.z);
     }
 }
